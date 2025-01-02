@@ -106,7 +106,7 @@ To test the API endpoints, you can use tools like [Postman](https://www.postman.
   - Delete Comment: `DELETE /api/comments/{id}/`
  
 - **Super Admin details:**
-  - Username: admin
-  - Email address: admin@admin.com
-  - Password: admin
+  - Username: `admin`
+  - Email address: `admin@admin.com`
+  - Password: `admin`
 ---
