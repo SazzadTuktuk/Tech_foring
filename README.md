@@ -5,10 +5,7 @@
 ### Requirements
 
 - Python 3.x
-- Django
-- Django REST Framework
-- drf-yasg (Swagger documentation)
-- djangorestframework-simplejwt (JWT Authentication)
+- pipenv (for managing virtual environment and dependencies)
 
 ### Steps to Set Up the Project Locally
 
@@ -18,18 +15,29 @@
    cd techforing_project
    ```
 
-2. **Create a Virtual Environment**
+2. **Install pipenv**
    ```bash
-   python -m venv venv
-   source venv/bin/activate  # For Windows: venv\Scripts\activate
+   pip install pipenv
    ```
 
-3. **Install the Dependencies**
+3. **Set Up the Virtual Environment and Install Dependencies**
    ```bash
-   pip install django djangorestframework drf-yasg djangorestframework-simplejwt
+   pipenv install --dev
    ```
 
-4. **Set Up the Django Project**
+4. **Activate the Virtual Environment**
+   ```bash
+   pipenv shell
+   ```
+
+#### Note: If you haven't created a `Pipfile` and `Pipfile.lock` yet, replace step 3 with the following:
+```bash
+pipenv install django djangorestframework drf-yasg djangorestframework-simplejwt
+```
+
+
+
+5. **Set Up the Django Project**
    ```bash
    cd techforing_project
    ```
@@ -98,4 +106,3 @@ To test the API endpoints, you can use tools like [Postman](https://www.postman.
   - Delete Comment: `DELETE /api/comments/{id}/`
 
 ---
-
